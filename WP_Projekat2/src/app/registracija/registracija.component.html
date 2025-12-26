@@ -1,0 +1,35 @@
+<div class="registracija-container">
+  <h2>Registracija Novog Korisnika</h2>
+  
+  <form>
+    <div class="form-group">
+      <label>Ime:</label>
+      <input type="text" placeholder="Unesite ime">
+    </div>
+
+    <div class="form-group">
+      <label>E-mail:</label>
+      <input type="email" placeholder="example@mail.com">
+    </div>
+
+    <div class="form-group">
+      <label>Password:</label>
+      <input type="password" placeholder="******">
+    </div>
+
+    <div class="form-group">
+      <label>Izbor teme:</label>
+      <select (change)="promijeniTemu($event)">
+  <option value="">Izaberi temu</option>
+  <option value="tema-zelena">Zelena</option>
+  <option value="tema-tamna">Tamna/Dark</option>
+  <option value="tema-cyberpunk">Cyberpunk</option>
+  <option value="tema-svijetla">Svijetla/Light</option>
+  <option value="tema-plava">Plava</option>
+</select>
+    </div>
+
+    <button type="submit">Registruj se</button>
+    <p>Već imate račun? <a routerLink="/login">Prijavite se</a></p>
+  </form>
+</div>
