@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+
+<div class="dashboard-container">
+  <header>
+    <h1>Organizator života i navika</h1>
+    <p>Odaberite modul koji želite koristiti:</p>
+  </header>
+
+  <div class="grid-menu">
+    <div class="card" (click)="otvoriModul('sleep')">
+      <div class="icon">😴</div>
+      <h3>Sleep Tracker</h3>
+      <p>Prati svoj san</p>
+    </div>
+    
+    <div class="card" (click)="otvoriModul('meal')">
+      <div class="icon">🥗</div>
+      <h3>Meal Tracker</h3>
+      <p>Plan ishrane</p>
+    </div>
+
+    <div class="card" (click)="otvoriModul('pixel')">
+      <div class="icon">🎭</div>
+      <h3>Pixel Tracker</h3>
+      <p>Dnevno raspoloženje</p>
+    </div>
+
+    <div class="card" (click)="otvoriModul('habit')">
+      <div class="icon">✅</div>
+      <h3>Habit Tracker</h3>
+      <p>Stvori navike</p>
+    </div>
+
+    <div class="card" (click)="otvoriModul('water')">
+      <div class="icon">💧</div>
+      <h3>Water Tracker</h3>
+      <p>Unos vode</p>
+    </div>
+
+    <div class="card" (click)="otvoriModul('study')">
+      <div class="icon">📚</div>
+      <h3>Study Tracker</h3>
+      <p>Plan učenja</p>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

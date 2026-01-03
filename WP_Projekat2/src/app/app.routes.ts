@@ -2,8 +2,13 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegistracijaComponent } from './registracija/registracija.component';
 
+import { HomeComponent } from './home/home.component'; 
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 export const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' }, // Početna vodi na login
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  { path: 'registracija', component: RegistracijaComponent }
+  { path: 'registracija', component: RegistracijaComponent },
+  { path: 'home', component: HomeComponent },        
+  { path: 'dashboard', component: DashboardComponent }
 ];

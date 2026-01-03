@@ -1,0 +1,20 @@
+.footer {
+  background-color: #666; 
+  color: white;           
+  
+  /* --- MAGIJA ZA CENTRIRANJE --- */
+  display: flex;          
+  justify-content: center;
+  align-items: center;    
+  
+
+  width: 100%;            
+  padding: 20px 0;          margin-top: auto;       
+  
+  /* --- TEKST --- */
+  text-align: center;       font-family: sans-serif;
+}
+
+p {
+  margin: 0; 
+}
